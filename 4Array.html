@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>红岩4lv2</title>
+  <script>
+    //方法一递归
+    // let arr = [1, [2, 3], [4, 5, [6, 7, 8]], 9];
+    // function flatten(arr) {
+    //   let newArr = [];
+    //   for (let i = 0; i < arr.length; i++) {
+    //     if (Array.isArray(arr[i])) {
+    //       newArr = newArr.concat(flatten(arr[i]));
+    //     }
+    //     else {
+    //       newArr.push(arr[i]);
+    //     }
+    //   }
+    //   return newArr;
+    // }
+    // let result = flatten(arr);
+    // console.log(result);
+    //结果 [1,2,3,4,5,6,7,8,9]
+
+    //方法二
+    let arr = [1, [2, 3], [4, 5, [6, 7, 8]], 9];
+    function flatten(arr) {
+      let newArr = [];
+      newArr = arr.join();
+      return newArr;
+    }
+
+    let result = [flatten(arr)];
+    console.log(result);
+    //结果 [1,2,3,4,5,6,7,8,9]
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
