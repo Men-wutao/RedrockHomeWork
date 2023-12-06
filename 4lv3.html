@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4lv3</title>
+  <script>
+    var a = { n: 1 };
+    var b = a;
+    a.x = a = { n: 2 };//添加x属性,并对a和x赋值
+    console.log(a);
+    console.log(b);
+    a.n = 3;//对x属性改变
+    console.log(b);
+    //知识点参考引用值的复制
+
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
